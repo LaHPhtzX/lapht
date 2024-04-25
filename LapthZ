@@ -13,7 +13,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
-ImageButton1.Image = "http://www.roblox.com/asset/?id=12523036534"
+ImageButton1.Image = "rbxthumb://type=Asset&id=16732192349&w=50&h=50"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -165,7 +165,7 @@ function Update:Window(text,logo,keybind)
     MapName.Position = UDim2.new(0, 85, 0, 0)
     MapName.Size = UDim2.new(0, 81, 0, 27)
     MapName.Font = Enum.Font.GothamSemibold
-    MapName.Text = "                | BLOX FRUIT"
+    MapName.Text = "              | BLOX FRUIT"
     MapName.TextColor3 = Color3.fromRGB(225, 225, 225)   
     MapName.TextSize = 20.000
     MapName.TextXAlignment = Enum.TextXAlignment.Left
@@ -198,7 +198,7 @@ local LogoHub = Instance.new("ImageLabel")
     LogoHub.BackgroundTransparency = 1.000
     LogoHub.Position = UDim2.new(0, 5, 0, 1)
     LogoHub.Size = UDim2.new(0, 26, 0, 26)
-    LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(12523036534)
+    LogoHub.Image = "rbxthumb://type=Asset&id=16732192349&w=50&h=50"
 
     local ScrollTab = Instance.new("ScrollingFrame")
     ScrollTab.Name = "ScrollTab"
@@ -3574,7 +3574,7 @@ end)
 
 print("Load Script")
 
-local Library = Update:Window("           Domadic","12523036534",Enum.KeyCode.RightControl);
+local Library = Update:Window("LaPhZz","12523036534",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
@@ -3593,7 +3593,7 @@ local G = Library:AddTab("","")
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
 H:AddLabel("Script PC/Mobile")
-H:AddLabel("Wellcone To Script Domadic Hub")
+H:AddLabel("Wellcone To Script LaPhZz Hub")
 
 H:AddSeperator("Credit")
 
@@ -16716,13 +16716,13 @@ spawn(function()
 print("LaPhZz Hub Load Complete")
 
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "rbxthumb://type=Asset&id=16732192349&w=50&h=50";
+      Icon = "http://www.roblox.com/asset/?id=12523036534";
       Title = "LaPhZz Hub", 
       Text = "Welcome To Script!!";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "rbxthumb://type=Asset&id=16732192349&w=50&h=50";
+      Icon = "http://www.roblox.com/asset/?id=12523036534";
       Title = "LaPhZz Hub", 
       Text = "made by @LaPhat อยาก Yed Owner Zps วะ";
 })
